@@ -15,8 +15,11 @@ sa surface et son volume.
 La console devrait écrire quelque chose dans cette veine:
 
 **The value a is: 4 and is contained in address: 0x7fff5fbff7c8**
+
 **The value b is: 3 and is contained in address: 0x7fff5fbff7c4**
+
 **The value a is: 3 and is contained in address: 0x7fff5fbff7c8**
+
 **The value b is: 4 and is contained in address: 0x7fff5fbff7c4**
 
 ## Exercice 3 (50%)
