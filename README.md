@@ -14,13 +14,12 @@ sa surface et son volume.
 
 La console devrait écrire quelque chose dans cette veine:
 
-**The value a is: 4 and is contained in address: 0x7fff5fbff7c8**
-
-**The value b is: 3 and is contained in address: 0x7fff5fbff7c4**
-
-**The value a is: 3 and is contained in address: 0x7fff5fbff7c8**
-
-**The value b is: 4 and is contained in address: 0x7fff5fbff7c4**
+```
+The value a is: 4 and is contained in address: 0x7fff5fbff7c8
+The value b is: 3 and is contained in address: 0x7fff5fbff7c4
+The value a is: 3 and is contained in address: 0x7fff5fbff7c8
+The value b is: 4 and is contained in address: 0x7fff5fbff7c4
+```
 
 ## Exercice 3 (50%)
 
@@ -36,7 +35,7 @@ Les **Monster** sont stockés dans une std::list et le *Hero* se bat contre eux 
 
 Dès qu’un **Monster** est mort, le suivant vient se battre contre le **Hero**. Dès que le **Hero** meurt, c’est game over et le programme quitte.
 
-La méthode fight utilise cette formule: _damage = attack / defense * strength_
+La méthode fight utilise cette formule: `damage = attack / defense * strength`
 
 La valeur de **damage** ne peut pas être plus petite que 0, comme elle ne peut pas être plus grande que **strength**.
 
