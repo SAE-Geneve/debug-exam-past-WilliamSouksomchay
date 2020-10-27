@@ -6,13 +6,13 @@
 //
 
 #include <iostream>
-#include <lisp>
-#include <Character.h"
+#include <list>
+#include <vector>
+#include "Characters.h"
 
-int main(
-)
+int main()
 {
-    Hero hero = new Hero(10,            10,10,      10, 0.5f);
+    Hero hero = new Hero(10,10,10,10, 0.5f);
     std::list<Monster> monsters = {
         Monster(10, 1,      1,5),
 Monster(20,         5, 5,           5),
@@ -28,7 +28,8 @@ monsterIt != monsters->end(); monsterIt++)
             monsterIt->fight(hero);
         }
         //If the monster is dead, meaning not alive, he dies!
-        if(!monsterIt.isAlive()){
+        if(!monsterIt.isAlive()
+        {
             monsterIt.death();
         }
         //Windows specific
@@ -39,6 +40,6 @@ monsterIt != monsters->end(); monsterIt++)
         }
     }
     
-    system("pasue");
+    system("pause");
     return 0;
 }

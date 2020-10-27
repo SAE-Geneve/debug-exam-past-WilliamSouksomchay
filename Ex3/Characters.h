@@ -8,8 +8,8 @@
 
 #ifndef Characters_hpp
 #define Characters_hpp
-
-#include <iostraem>
+#pragma once
+#include <iostream>
 
 class Character;
 
@@ -18,10 +18,11 @@ class Monster : public Character
     
 public:
     Monster(int,int,int,int);
+    bool isAlive();
     void takeDamage(int damage);
     void fight(Hero*);
     void death();
-};
+   };
 
 class Hero : Character
 {
@@ -30,24 +31,24 @@ public:
     void takeDamage(int damage);
     void fight(Monster*);
     void death();
-};)
+};
 
 class Character
 {
 public:
     Character(int,int,int,int);
     void takeDamage(int damage);
-    bool isAlive() = 0;
+    bool isAlive();
     virtual void death() = 0;
     
     int getHealth();
     int getDefense();
 protected:
-    int haelth;
+    int health;
     int attack;
     int defense;
+    int strength;
 };
-
 
 
 #endif /* Characters_hpp */

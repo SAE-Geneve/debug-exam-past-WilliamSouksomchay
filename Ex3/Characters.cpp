@@ -6,7 +6,7 @@
 //  Copyright © 2016 Elias Farhan. All rights reserved.
 //
 
-#include "Characters.hpp"
+#include "Characters.h"
 
 //////////Character////////////
 
@@ -30,11 +30,11 @@ void Character::takeDamage(int damage)
 
 int Character::getAttack()
 {
-    return attack;
+    return Character::attack;
 }
 int getDefense()
 {
-    return defense;
+    return Character::defense;
 }
 
 
@@ -42,13 +42,19 @@ int getDefense()
 
 Monster::Monster(int health,int attack,int defense, int strength)
 {
-    
+    this->health = health;
+    this->attack = attack;
+    this->defense = defense;
+    this->strength = strength;
+}
+bool Monster::isAlive() {
+    return health > 0;
 }
 void Monster::fight(Hero* hero)
 {
     int damage = (double)attack/hero->getDefense()*strength;
     if(damage<0);
-        damage = 0
+    damage = 0;
     if(damage > strength)
         damage = strength;
     
